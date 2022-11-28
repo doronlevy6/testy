@@ -1,0 +1,61 @@
+body {
+  color: #333333; /* זה לכל האתר */
+  font-family: arial;
+  max-width: 650px; /* מקס רוחב לאתר*/
+
+  margin: 0 auto; /* הראשון זה ללמעלה ולמטה והשני זה לצדדים*/
+  padding: 0 16px;
+
+  display: flex; /*  */
+  flex-direction: column; /*(=top to bottom)  defoult: row (= left tot right)*/
+  min-height: 100vh; /* 100% from view port height */
+}
+
+.main-content {
+  flex-grow: 1; /* שייקח מרווח ככל שצריך*/
+}
+
+footer {
+  color: #888888;
+
+  border-top: 1px solid #121212;
+  margin-top: 16px;
+  padding: 16px 0; /* אם שמים ערך אחד בלבד אז זה לכל הכיוונים*/
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+  color: rgb(223, 34, 229);
+}
+h2 {
+  margin-left: 100px;
+}
+
+header a {
+  /*ישנה רק את הלינקים שבתוך ההדר*/
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none; /* defoult: underline*/
+}
+
+.portrait {
+  width: 250px;
+}
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: rgb(244, 241, 241);
+  padding: 8px;
+}
