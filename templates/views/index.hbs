@@ -1,11 +1,34 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/app-c.js"></script>
+    
   </head>
 
   <body>
+    
     {{>header}}
-    <h1>{{title}}</h1>
+    
+   
+<div>
+   <h2> <label for="cars">Choose an employer:</label></h2>
+    <div>
+    <select id="employers" name="emp">
+      <option value="doron">doron</option>
+      <option value="yehuda">yehuda</option>
+      <option value="meir">meir</option>
+      <option value="avinoam" >avinoam</option>
+    </select>
+    <button id="button1">show the employer</button>
+  
+  </div>
+  <div>
+   <input placeholder="Location" />
+   <img class="potrait" id="img1" src="/img/yehuda.jpg">
+  
+  </div>
+  
+
+<button id="button2">Search</button>
+    <script src="js/app-c.js"></script>
   </body>
 </html>
