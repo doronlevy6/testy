@@ -35,13 +35,10 @@ app.get("/doron", (req, res) => {
   });
 });
 app.get("/meir", (req, res) => {
-  client.query(`SELECT pictureurl FROM employ1 WHERE idd=4`, (err, result) => {
-    if (!err) {
-      res.send({
-        name: "meir",
-        function: "a" + result.fields,
-      });
-    }
+  console.log("aaaa");
+  res.send({
+    name: "meir",
+    function: "yeled2",
   });
 });
 
@@ -141,7 +138,7 @@ app.get("/test/:id", (req, res) => {
 //   });
 //   client.end();
 // });
-console.log("1b2a");
-app.listen(80, () => {
-  console.log("Server is up on port 80.");
+
+app.listen(3300, () => {
+  console.log("Server is up on port 3300.");
 });
