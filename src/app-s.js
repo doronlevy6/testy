@@ -142,6 +142,8 @@ app.get("/test/:id", (req, res) => {
 //   client.end();
 // });
 console.log("33333");
+console.log("44444");
+
 app.listen(80, () => {
   console.log("Server is up on port 80.");
 });
